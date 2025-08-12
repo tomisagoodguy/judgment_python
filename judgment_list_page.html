@@ -1,0 +1,473 @@
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+    <meta property="og:image" content="https://judgment.judicial.gov.twfblogo.png">
+    <title>
+	查詢結果列表
+</title><link rel="stylesheet" href="../css/bootstrap.min.css"><link rel="stylesheet" href="../css/font-awesome.min.css"><link rel="stylesheet" href="../css/iframe.css">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-X3FQ17YF4M&amp;cx=c&amp;gtm=457e5870h2za200&amp;tag_exp=101509157~103116026~103200004~103233427~104684208~104684211~105033766~105033768~105103161~105103163~105135708~105135710"></script><script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>    
+    <script type="text/javascript" src="/js/isMobile.js"></script>
+    <!--引用司法院內網的網頁字型 javascript -->
+    <script type="text/javascript" src="https://tpjwebfont2.judicial.gov.tw/WebFont/cmexwebfont.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-100643133-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-100643133-1');
+    </script>
+
+    <!-- Google tag (gtag.js) --> <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-NB3N15LK5E"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-NB3N15LK5E'); </script>		
+	
+    
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="../css/result.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+    <script>
+        $(document).ready(function () {
+            subset(".tdCut", "sung");
+        });
+        function cookieId(id, ro, q, gy, gc, sort, jt) {
+            document.cookie = "FJUEQRYParamsCookie_out=id=" + id + "&q=" + q + "&gy=" + gy + "&gc=" + gc + "&sort=" + sort + "&ro=" + ro  + "&jt=" + jt + ";";//domain=law.intraj;secure;
+        }
+    </script>
+</head>
+<body>
+    <form method="post" action="./qryresultlst.aspx?ty=JUDBOOK&amp;q=5b98652e05660a4b80b6e90c089854c0" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Zo9Y+PtXtgvkWPeX7RrHqOcJeoyNd7KxK9Nvavho2GJIY0Er/Udly635/50/h9mH9FqAfw==">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="71F44E97">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="3cR7RJaSo7xIztFYsTj50wkCSn3uU9ZzxPBjdbyEKc97+oLTPoxGVQniDgd/v4UPhIj1d5MeIMYvMPJEXrJv+7jXBwrCGmQrtrBz4k1ghxiYw23kA1VyljKZ9nI1NKNBcb9/T/rCvxRODHS/tB3uTVn1Tb36tIk0EEnEAEWo6Qardv22AM6JB+9Wj3of130lm4W9SkQez680f6d2oQi24reFZUl3ANxT8mz4QWcKm5LcVctfYr8g9LfpMy9kZ1ZKnRIMQM/sjlJEcxj3r6pe6PUIZGg=">
+</div>
+    <div class="container">
+        <h1 style="display:none"></h1>
+        
+    <div class="result-list">
+        <div class="result-heading">
+            <div class="result-title">查詢結果列表</div>
+            <a href="#" id="closeCut" class="btn btn-basic memoBtn">隱藏摘要</a>
+        </div>
+        
+        <div class="list-pager">
+            <div class="dropdown pull-left">
+                排序：<button class="btn btn-default btn-xs" type="button" id="dropdown-menu-sort" data-toggle="dropdown">
+				    日期新到舊
+				    <i class="fa fa-sort"></i>
+			    </button>
+			    <ul class="dropdown-menu">
+                    <li><a href="qryresultlst.aspx?sort=DS&amp;ot=in">裁判日期新到舊</a></li>
+                    <li><a href="qryresultlst.aspx?sort=DB&amp;ot=in">裁判日期舊到新</a></li>
+                    <li><a href="qryresultlst.aspx?sort=LG&amp;ot=in" class="courtsort">法院層級大到小</a></li>
+                    <li><a href="qryresultlst.aspx?sort=LB&amp;ot=in" class="courtsort">法院層級小到大</a></li><!--公示催告、簡易案件沒有法院層級分別(都是地院)-->
+                    <li><a href="qryresultlst.aspx?sort=KG&amp;ot=in">裁判大小大到小</a></li>
+                    <li><a href="qryresultlst.aspx?sort=KB&amp;ot=in">裁判大小小到大</a></li>
+			    </ul>
+            </div>
+            
+<script type="text/javascript">
+    function GoPage(ddl) {
+        location.href = ddl.value;
+    }
+</script>
+<div id="plPager" class="pull-right">
+	
+	<span>共 87 筆 . 現在第 1 / 5 頁</span>
+    <span>
+	    
+        
+        <a id="hlNext" class="page" href="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;page=2&amp;ot=in">下一頁</a>
+        <a id="hlLast" class="page" href="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;page=5&amp;ot=in">最末頁</a>
+	跳至
+        <select name="ctl00$cp_content$ucPagerTop$ddlPage" id="ddlPage" class="btn btn-default btn-xs" onchange="GoPage(this)">
+		<option selected="selected" value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=1">1</option>
+		<option value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=2">2</option>
+		<option value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=3">3</option>
+		<option value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=4">4</option>
+		<option value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=5">5</option>
+
+	</select>
+頁
+    </span>
+
+</div>
+<div class="clearfix"></div>
+        </div>
+        
+            <table id="jud" class="jub-table">
+                <tbody><tr>
+                    <th>序號</th>
+                    <th>裁判字號 （內容大小）</th>
+                    <th>裁判日期 </th>
+                    <th>裁判案由 </th>
+                </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">1.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('TCHV%2c114%2c%e6%8a%97%2c288%2c20250729%2c1','0','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('TCHV%2c114%2c%e6%8a%97%2c288%2c20250729%2c1','0','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=TCHV%2c114%2c%e6%8a%97%2c288%2c20250729%2c1&amp;ot=in">臺灣高等法院 臺中分院 114 年度 抗 字第 288 號民事裁定</a>（8K）</td>
+                <td>114.07.29</td>
+                <td width="30%">聲明異議</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...右側肩膀挫傷、左側手部擦傷、左側膝蓋挫傷等傷害，醫囑建議休養2周，嗣因持續行走及蹲踞困難，經回診以核磁共振發現後十字韌帶斷裂及内側<span class="highlight">半月板破裂</span>等傷害（與右側肩膀挫傷等傷害，下合稱系爭傷害），而以手術治療及護具使用，手術後之恢復期需要約9個月，則依系爭傷害治療所需花費、恢復...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">2.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('PTDV%2c114%2c%e5%86%8d%e6%98%93%2c4%2c20250728%2c1','1','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('PTDV%2c114%2c%e5%86%8d%e6%98%93%2c4%2c20250728%2c1','1','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=PTDV%2c114%2c%e5%86%8d%e6%98%93%2c4%2c20250728%2c1&amp;ot=in">臺灣屏東地方法院 114 年度 再易 字第 4 號民事判決</a>（4K）</td>
+                <td>114.07.28</td>
+                <td width="30%">再審之訴</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...診，卻經診斷有右側膝部鈍挫傷及疑似十字韌帶或外側半月板受損，又其至衛生福利部恆春旅遊醫院(下稱恆春旅遊醫院)就診，則診斷有右膝外側<span class="highlight">半月板破裂</span>併關節滑膜炎、右膝外側副韌帶撕裂及右膝膕滑膜囊腫，再審被告所提出之南門醫院及恆春旅遊醫院之診斷證明書內容均有所不實，應有偽造之情事...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">3.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('KSDV%2c114%2c%e6%95%91%2c67%2c20250716%2c1','2','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('KSDV%2c114%2c%e6%95%91%2c67%2c20250716%2c1','2','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=KSDV%2c114%2c%e6%95%91%2c67%2c20250716%2c1&amp;ot=in">臺灣高雄地方法院 114 年度 救 字第 67 號民事裁定</a>（5K）</td>
+                <td>114.07.16</td>
+                <td width="30%">訴訟救助</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...前揭診斷證明書雖記載聲請人自105 年10月24日起至113 年5 月20日因右股骨頸骨折人工髖關節術後、右膝前十字韌帶部分斷裂、<span class="highlight">半月板破裂</span>等疾患前去就醫治療，且目前右下肢無力跛行，活動角度0 至80度，症狀固定，無法工作，但由上開證明書所載無法工作，僅可認定係指需藉右...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">4.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('KSDV%2c114%2c%e6%95%91%2c66%2c20250708%2c1','3','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('KSDV%2c114%2c%e6%95%91%2c66%2c20250708%2c1','3','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=KSDV%2c114%2c%e6%95%91%2c66%2c20250708%2c1&amp;ot=in">臺灣高雄地方法院 114 年度 救 字第 66 號民事裁定</a>（3K）</td>
+                <td>114.07.08</td>
+                <td width="30%">訴訟救助</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...中高齡及高齡勞工、促進高齡者再就業即明。至聲請人主張其為低收入戶，且因車禍導致右股骨頸骨折人工髖關節術後、右膝前十字韌帶部分斷裂、<span class="highlight">半月板破裂</span>，目前右下肢無力跛行，無法工作等情，固提出低收入戶證明及診斷證明書釋明，惟亦應僅無法從事需藉右下肢為勞動之工作而言，尚不至於完全喪...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">5.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('TPDV%2c114%2c%e5%9f%b7%e4%ba%8b%e8%81%b2%2c345%2c20250701%2c1','4','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('TPDV%2c114%2c%e5%9f%b7%e4%ba%8b%e8%81%b2%2c345%2c20250701%2c1','4','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=TPDV%2c114%2c%e5%9f%b7%e4%ba%8b%e8%81%b2%2c345%2c20250701%2c1&amp;ot=in">臺灣臺北地方法院 114 年度 執事聲 字第 345 號民事裁定</a>（12K）</td>
+                <td>114.07.01</td>
+                <td width="30%">聲明異議</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...達50次理賠紀錄，其中包括腦中風、急性心肌梗塞、狹心症、冠心症、高血壓性心臟病、腰椎滑脫、椎間板症、腰椎脊髓病變、足趾後天性變形、<span class="highlight">半月板破裂</span>等重大疾病之理賠（見司執卷第190-192頁），倘就相對人附表所示保單予以解約換價，恐致相對人對附表所示保單所生醫療保障全然喪失。...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">6.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('TPSV%2c114%2c%e5%8f%b0%e7%b0%a1%e4%b8%8a%2c13%2c20250611%2c1','5','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('TPSV%2c114%2c%e5%8f%b0%e7%b0%a1%e4%b8%8a%2c13%2c20250611%2c1','5','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=TPSV%2c114%2c%e5%8f%b0%e7%b0%a1%e4%b8%8a%2c13%2c20250611%2c1&amp;ot=in">最高法院 114 年度 台簡上 字第 13 號民事判決</a>（9K）</td>
+                <td>114.06.11</td>
+                <td width="30%">請求侵權行為損害賠償</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...狀況，即貿然左轉，致其所駕駛之大客車車頭碰撞伊之機車車頭，伊因而人車倒地，受有右膝、右小腿及左胸挫傷、右膝挫傷合併後十字靭帶斷裂及<span class="highlight">半月板破裂</span>等傷害(下稱系爭事故)。伊於109年1月16日接受右膝部後十字韌帶重建手術，同年月20日出院後除仍需專人照顧1個月外，另需居家休養...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">7.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('CYDV%2c113%2c%e7%b0%a1%e4%b8%8a%2c105%2c20250528%2c1','6','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('CYDV%2c113%2c%e7%b0%a1%e4%b8%8a%2c105%2c20250528%2c1','6','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=CYDV%2c113%2c%e7%b0%a1%e4%b8%8a%2c105%2c20250528%2c1&amp;ot=in">臺灣嘉義地方法院 113 年度 簡上 字第 105 號民事判決</a>（25K）</td>
+                <td>114.05.28</td>
+                <td width="30%">侵權行為損害賠償(交通)</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...牌號碼000-0000機車橫越東西行向之中興路欲至中興路30號附近拿取水果，兩車因而發生碰撞，致上訴人受有左側脛骨上端粉碎性骨折及<span class="highlight">半月板破裂</span>、左側腓骨上端閉鎖性骨折之傷害（下稱系爭傷害），爰依侵權行為損害賠償請求權請求被上訴人賠償。二、上訴人因被上訴人前開侵權行為致受有...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">8.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('TCDV%2c114%2c%e5%85%a8%e4%ba%8b%e8%81%b2%2c6%2c20250522%2c1','7','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('TCDV%2c114%2c%e5%85%a8%e4%ba%8b%e8%81%b2%2c6%2c20250522%2c1','7','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=TCDV%2c114%2c%e5%85%a8%e4%ba%8b%e8%81%b2%2c6%2c20250522%2c1&amp;ot=in">臺灣臺中地方法院 114 年度 全事聲 字第 6 號民事裁定</a>（8K）</td>
+                <td>114.05.22</td>
+                <td width="30%">聲明異議</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...再債權人因本件交通事故於事故當日至長安醫院急診，醫囑建議休養2周，嗣因持續行走及蹲踞困難，經回診以核磁共振發現後十字韌帶斷裂及內側<span class="highlight">半月板破裂</span>等傷害，而以手術治療及護具使用，手術後之恢復期需要約9個月等情，另依前開交通事故鑑定結果意見，認債務人駕駛自用小客車，行致設有閃光...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">9.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('CTDV%2c114%2c%e7%b0%a1%e4%b8%8a%2c47%2c20250521%2c1','8','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('CTDV%2c114%2c%e7%b0%a1%e4%b8%8a%2c47%2c20250521%2c1','8','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=CTDV%2c114%2c%e7%b0%a1%e4%b8%8a%2c47%2c20250521%2c1&amp;ot=in">臺灣橋頭地方法院 114 年度 簡上 字第 47 號民事判決</a>（13K）</td>
+                <td>114.05.21</td>
+                <td width="30%">損害賠償</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...、長群骨外科診所診斷證明書、病歷可考（見簡上卷第69至83頁），足見上訴人於高雄市立民生醫院就診時，尚無從得知受有十字韌帶撕裂傷、<span class="highlight">半月板破裂</span>，並需持續就醫、休養3個月之事實。上訴人主張後續在七賢脊椎外科醫院就診時，才知有此傷勢並需休養，乃向湘湘港式宵夜大昌店請假3個月，...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">10.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('KSDV%2c114%2c%e6%95%91%2c45%2c20250519%2c1','9','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('KSDV%2c114%2c%e6%95%91%2c45%2c20250519%2c1','9','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=KSDV%2c114%2c%e6%95%91%2c45%2c20250519%2c1&amp;ot=in">臺灣高雄地方法院 114 年度 救 字第 45 號民事裁定</a>（3K）</td>
+                <td>114.05.19</td>
+                <td width="30%">訴訟救助</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...者及高齡者就業促進法，鼓勵雇主僱用高齡勞工即明之。上開診斷證明書雖記載聲請人有右股骨頸骨折人工髖關節術後、右膝前十字韌帶部分斷裂、<span class="highlight">半月板破裂</span>等疾患，然依其記載僅能得知聲請人目前右下肢無力跛行，無法工作，尚難逕謂聲請人完全喪失工作能力。又聲請人於另案經准許訴訟救助之情況，...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">11.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('TPHV%2c114%2c%e8%81%b2%2c171%2c20250512%2c1','10','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('TPHV%2c114%2c%e8%81%b2%2c171%2c20250512%2c1','10','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=TPHV%2c114%2c%e8%81%b2%2c171%2c20250512%2c1&amp;ot=in">臺灣高等法院 114 年度 聲 字第 171 號民事裁定</a>（3K）</td>
+                <td>114.05.12</td>
+                <td width="30%">訴訟救助</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...市立大同醫院113年5月20日診斷證明書之「科別」欄為「骨科」，「病名欄」為「右股骨頸骨折人工髖關節術後、右膝前十字韌帶部分斷裂、<span class="highlight">半月板破裂</span>」，「醫師囑言」欄記載自105年10月24日至113年5月20日間計24次因上述病情骨科治療，「目前右下肢無力跛行，活動角度0-8...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">12.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('PCDV%2c114%2c%e6%95%91%2c47%2c20250418%2c1','11','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('PCDV%2c114%2c%e6%95%91%2c47%2c20250418%2c1','11','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=PCDV%2c114%2c%e6%95%91%2c47%2c20250418%2c1&amp;ot=in">臺灣新北地方法院 114 年度 救 字第 47 號民事裁定</a>（3K）</td>
+                <td>114.04.18</td>
+                <td width="30%">訴訟救助</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...及高齡者就業促進法，鼓勵雇主僱用高齡勞工即明之。又上開診斷證明書雖記載聲請人有右股骨頸骨折人工髖關節術後、右膝前十字韌帶部分斷裂、<span class="highlight">半月板破裂</span>等疾患，然依其記載僅能得知聲請人目前右下肢無力跛行，無法工作，尚難逕謂聲請人完全喪失工作能力。是聲請人所提證據不足使本院認定其為窘...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">13.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('TCHV%2c113%2c%e4%bf%9d%e9%9a%aa%e4%b8%8a%2c8%2c20250416%2c1','12','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('TCHV%2c113%2c%e4%bf%9d%e9%9a%aa%e4%b8%8a%2c8%2c20250416%2c1','12','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=TCHV%2c113%2c%e4%bf%9d%e9%9a%aa%e4%b8%8a%2c8%2c20250416%2c1&amp;ot=in">臺灣高等法院 臺中分院 113 年度 保險上 字第 8 號民事判決</a>（13K）</td>
+                <td>114.04.16</td>
+                <td width="30%">給付保險金</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...診時，診斷證明書僅記載「右膝挫傷合併關節積水」(原審卷一第37頁)，並無半月板或韌帶受傷之記載，當日MRI檢查結果亦顯示，並無任何<span class="highlight">半月板破裂</span>、韌帶斷裂之情形，僅有少量關節積水(原審卷二第261頁MRI檢查報告單)，上訴人所提出佳優診所開立其因「右膝挫傷外側半月軟骨部分破...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">14.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('TNDV%2c114%2c%e5%a9%9a%2c41%2c20250401%2c1','13','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('TNDV%2c114%2c%e5%a9%9a%2c41%2c20250401%2c1','13','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=TNDV%2c114%2c%e5%a9%9a%2c41%2c20250401%2c1&amp;ot=in">臺灣臺南地方法院 114 年度 婚 字第 41 號民事判決</a>（9K）</td>
+                <td>114.04.01</td>
+                <td width="30%">離婚</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...生活開支均由原告一人承擔，對原告構成嚴重財務壓力。而原告因長期承受龐大的經濟壓力，原告在高風險的離岸風電產業工作期間，不幸導致左膝<span class="highlight">半月板破裂</span>，原告於113年8月12日接受關節鏡半月板縫合與關節內囊腫切除手術，並於113年8月13日出院，目前原告正在家中進行復健，預計需持...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">15.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('KSDV%2c114%2c%e6%95%91%2c27%2c20250331%2c1','14','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('KSDV%2c114%2c%e6%95%91%2c27%2c20250331%2c1','14','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=KSDV%2c114%2c%e6%95%91%2c27%2c20250331%2c1&amp;ot=in">臺灣高雄地方法院 114 年度 救 字第 27 號民事裁定</a>（5K）</td>
+                <td>114.03.31</td>
+                <td width="30%">訴訟救助</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...前揭診斷證明書雖記載聲請人自105 年10月24日起至113 年5 月20日因右股骨頸骨折人工髖關節術後、右膝前十字韌帶部分斷裂、<span class="highlight">半月板破裂</span>等疾患前去就醫治療，且目前右下肢無力跛行，活動角度0 至80度，症狀固定，無法工作，但由上開證明書所載無法工作，僅可認定係指需藉右...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">16.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('TPHV%2c112%2c%e4%b8%8a%e5%9c%8b%2c4%2c20250326%2c1','15','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('TPHV%2c112%2c%e4%b8%8a%e5%9c%8b%2c4%2c20250326%2c1','15','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=TPHV%2c112%2c%e4%b8%8a%e5%9c%8b%2c4%2c20250326%2c1&amp;ot=in">臺灣高等法院 112 年度 上國 字第 4 號民事判決</a>（13K）</td>
+                <td>114.03.26</td>
+                <td width="30%">國家賠償</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...0年4月22日、同年5月14日因右膝關節內側半月板軟骨破裂與疼痛至榮總就醫。㈧上訴人於111年12月20日因右膝關節炎病軟骨缺損、<span class="highlight">半月板破裂</span>至義大醫療財團法人義大癌治療醫院(下稱義大醫院)就診住院，並於翌日接受高位脛骨截骨手術。㈨上訴人主張之跌倒地點於91年間有人行道設...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">17.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('TPDV%2c114%2c%e6%95%91%2c49%2c20250326%2c1','16','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('TPDV%2c114%2c%e6%95%91%2c49%2c20250326%2c1','16','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=TPDV%2c114%2c%e6%95%91%2c49%2c20250326%2c1&amp;ot=in">臺灣臺北地方法院 114 年度 救 字第 49 號民事裁定</a>（7K）</td>
+                <td>114.03.26</td>
+                <td width="30%">訴訟救助</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...利於聲請人主張之認定基礎。㈣再者，聲請人以高雄市立大同醫院診斷證明書，主張其因右股骨頸骨折人工髖關節術後、右膝前十字韌帶部分斷裂、<span class="highlight">半月板破裂</span>，造成右下肢無力跛行，無法工作。然前開診斷證明書記載其自105年10月24日起即有該疾患，且該診斷證明書所載之無法工作，係指需藉右...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">18.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('MLDV%2c114%2c%e8%8b%97%e7%b0%a1%2c73%2c20250325%2c1','17','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('MLDV%2c114%2c%e8%8b%97%e7%b0%a1%2c73%2c20250325%2c1','17','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=MLDV%2c114%2c%e8%8b%97%e7%b0%a1%2c73%2c20250325%2c1&amp;ot=in">臺灣苗栗地方法院 114 年度 苗簡 字第 73 號民事判決</a>（10K）</td>
+                <td>114.03.25</td>
+                <td width="30%">侵權行為損害賠償(交通)</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...避不及因而發生碰撞（下稱系爭車禍），造成原告受有左胸挫傷併左肋骨骨折、四肢多處挫擦傷、前側十字韌帶斷裂、後側十字韌帶部分斷裂、外側<span class="highlight">半月板破裂</span>等傷害（下稱系爭傷害），系爭機車亦受損。而原告因系爭車禍受有下列損害：㈠醫療費用新臺幣（下同）4,110元；㈡就醫往返之交通費用7...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">19.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('KSHV%2c114%2c%e6%8a%97%2c73%2c20250318%2c1','18','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('KSHV%2c114%2c%e6%8a%97%2c73%2c20250318%2c1','18','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=KSHV%2c114%2c%e6%8a%97%2c73%2c20250318%2c1&amp;ot=in">臺灣高等法院 高雄分院 114 年度 抗 字第 73 號民事裁定</a>（5K）</td>
+                <td>114.03.18</td>
+                <td width="30%">訴訟救助</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...足以認定抗告人無資力支出裁判費。至抗告人以高雄市立大同醫院診斷證明書，主張其因右股骨頸骨折人工髖關節術後、右膝前十字韌帶部分斷裂、<span class="highlight">半月板破裂</span>，造成右下肢無力跛行，無法工作。然前開診斷證明書記載其自105年10月24日起即有該疾患，且該診斷證明書所載之無法工作，係指需藉右...</span></td>
+            </tr>
+        
+            <tr>
+                <td width="1%" nowrap="nowrap">20.</td>
+                <td><a id="hlTitle" class="hlTitle_scroll" onclick="cookieId('PCDV%2c112%2c%e5%8b%9e%e8%a8%b4%2c165%2c20250317%2c1','19','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" onmousedown="cookieId('PCDV%2c112%2c%e5%8b%9e%e8%a8%b4%2c165%2c20250317%2c1','19','5b98652e05660a4b80b6e90c089854c0','','','DS','1')" href="data.aspx?ty=JD&amp;id=PCDV%2c112%2c%e5%8b%9e%e8%a8%b4%2c165%2c20250317%2c1&amp;ot=in">臺灣新北地方法院 112 年度 勞訴 字第 165 號民事判決</a>（24K）</td>
+                <td>114.03.17</td>
+                <td width="30%">請求給付職業災害賠償等</td>
+            </tr>
+            <tr class="summary">
+                <th id="jud-s"></th>
+                <td colspan="3" headers="jud-s"><span class="tdCut">...卷二第122至123頁)。再參諸原告前於111年4月6日至5月2日至新北市立聯合醫院就診時，即業經診斷有「左膝後十字韌帶斷裂、左膝<span class="highlight">半月板破裂</span>及左膝挫傷」等傷勢，亦有診斷證明書在卷可查（見本院卷一第167頁）。則原告所受「左膝後十字韌帶斷裂」傷勢，既經依醫療專業判斷，認定...</span></td>
+            </tr>
+        </tbody></table>
+        <div class="list-pager">
+        
+<script type="text/javascript">
+    function GoPage(ddl) {
+        location.href = ddl.value;
+    }
+</script>
+<div id="plPager" class="pull-right">
+	
+	<span>共 87 筆 . 現在第 1 / 5 頁</span>
+    <span>
+	    
+        
+        <a id="hlNext" class="page" href="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;page=2&amp;ot=in">下一頁</a>
+        <a id="hlLast" class="page" href="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;page=5&amp;ot=in">最末頁</a>
+	跳至
+        <select name="ctl00$cp_content$ucPagerButtom$ddlPage" id="ddlPage" class="btn btn-default btn-xs" onchange="GoPage(this)">
+		<option selected="selected" value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=1">1</option>
+		<option value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=2">2</option>
+		<option value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=3">3</option>
+		<option value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=4">4</option>
+		<option value="/FJUD/qryresultlst.aspx?q=5b98652e05660a4b80b6e90c089854c0&amp;sort=DS&amp;&amp;Page=5">5</option>
+
+	</select>
+頁
+    </span>
+
+</div>
+<div class="clearfix"></div>
+        </div>
+    </div>
+
+    </div>
+    </form>
+
+
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/iframeautohight.js"></script>
+<script type="text/javascript" src="/js/functions.js"></script>
+<script>
+    $(".hlTitle_scroll").click(function () {
+        var expires = new Date();
+        //有效時間保存 3分鐘 3*60*1000
+        expires.setTime(expires.getTime() + 180000);
+        var scroll = parent.document.documentElement.scrollTop;
+        document.cookie = "yPos=!~" + scroll + "~!" + ";expires=" + expires.toGMTString() + ";path=/";
+    });
+
+    $(function () {
+        if (!!window.performance && window.performance.navigation.type === 2) {
+            //!! 用來檢查 window.performance 是否存在
+            //window.performance.navigation.type ===2 表示使用 back or forward
+            var strCook = document.cookie;
+            if (strCook.indexOf("!~") != 0) {
+                var intS = strCook.indexOf("!~");
+                var intE = strCook.indexOf("~!");
+                var strPos = strCook.substring(intS + 2, intE);
+                top.$("body,html").animate({ scrollTop: strPos }, 0);
+                document.cookie = "";
+            }
+        }
+        else
+        {
+            //iframe換頁後，必須至頂
+            if (parent.document.documentElement.scrollTop != 0) { top.$("body,html").animate({ scrollTop: 0 }, 0); }
+        }
+        //避免XFS攻擊
+        if (top.location.hostname != self.location.hostname) { top.location = self.location; }
+        //如果法規放在iframe裡，那Master要改用iframe.master
+        if ($("#iframe-data", window.parent.document) != undefined) {
+            var queryVars = { 'ot': 'in' };
+         
+            $("a:not(.eng)").each(function (index) {
+                var url = $(this).attr("href");
+                var target = $(this).attr("target");
+                /*
+                if (url.indexOf("https://cons-test.judicial.gov.tw/") >= 0)
+                {
+                    return;
+                }
+                */
+                try {
+                    if (url != undefined && url.substring(0, 1) != "#" && target != "_blank" && target != "_parent") {
+                        if (url.indexOf('ot=in') == -1) {
+                            var separator = url.indexOf('?') !== -1 ? "&" : "?";
+                            url = url + separator + "ot=in";
+                            $(this).attr("href", url);
+                        }
+                    }
+                } catch (err) {
+                    alert(err.message);
+                }
+            });
+        }
+    });
+</script>
+
+    <script>
+        var ShortMemo = "1";
+        //排序
+        //var ty = getUrlParameter("ty");
+        var gy = getUrlParameter("gy");
+        var gc = getUrlParameter("gc");
+        //var qUrl = "&ty=" + ty + "&gy=" + gy + "&gc=" + gc + "&q=5b98652e05660a4b80b6e90c089854c0";
+        var qUrl = "&gy=" + gy + "&gc=" + gc + "&q=5b98652e05660a4b80b6e90c089854c0";
+
+        $(".dropdown-menu a").on("click", function (e) {
+            e.preventDefault();
+            window.location.href = $(this).attr("href") + qUrl;
+        });
+
+        $(function () {
+            if (document.cookie.indexOf("showcut=1") > -1) {
+                $(".tdCut").hide();
+                ShortMemo = "0";
+                $("#closeCut").text("顯示摘要");
+            }
+            else {
+                $(".tdCut").show();
+                ShortMemo = "1";
+                $("#closeCut").text("隱藏摘要");
+                document.cookie = "showcut=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + ";path=/";
+            }
+        });
+
+        $("#closeCut").click(function () {
+            if (ShortMemo == "1") {
+                var d = new Date();
+                d.setTime(d.getTime() + (1 * 24 * 60 * 60 * 1000));//保存1個月
+                var expires = "expires=" + d.toGMTString();
+                //加入cookie
+                document.cookie = "showcut=1; expires=" + expires + ";path=/";
+                $(".tdCut").hide();
+                ShortMemo = "0";
+                $("#closeCut").text("顯示摘要");
+            }
+            else {
+                $(".tdCut").show();
+                ShortMemo = "1";
+                $("#closeCut").text("隱藏摘要");
+                document.cookie = "showcut=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + ";path=/";
+            }
+        });
+    </script>
+</body></html>
